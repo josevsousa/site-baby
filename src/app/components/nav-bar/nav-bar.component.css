@@ -1,0 +1,26 @@
+button.navbar-toggler{
+    outline: none;
+    border: none;
+}
+a.login {
+    display: contents;
+    color: #424242 !important;
+    cursor: pointer;
+}
+a.login:hover{
+    color: #727272 !important;
+}
+a.login>.avatar_icon{
+    font-size: 35px;
+}
+a.login>.imgAvatar{
+    width: 32px;
+    border-radius: 50%;
+}   
+a#navbarDropdown {
+    padding-left: 6px !important;
+    color: #4a4a4a;
+}
+.nav-item.dropdown {
+    display: -webkit-inline-box !important;
+}
