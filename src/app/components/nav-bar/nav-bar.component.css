@@ -6,6 +6,7 @@ a.login {
     display: contents;
     color: #424242 !important;
     cursor: pointer;
+    
 }
 a.login:hover{
     color: #727272 !important;

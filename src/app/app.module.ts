@@ -19,12 +19,14 @@ import { HomePageComponent } from './home-page/home-page.component';
 
 
 import { ModalModule } from 'ngx-bootstrap/modal';
+import { BannerHomeComponent } from './components/banner-home/banner-home.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavBarComponent,
-    HomePageComponent
+    HomePageComponent,
+    BannerHomeComponent
   ],
   imports: [
     BrowserModule,

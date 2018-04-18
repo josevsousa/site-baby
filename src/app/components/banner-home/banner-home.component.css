@@ -1,0 +1,10 @@
+#carouselExampleControls{    
+    background-color: aquamarine;
+    padding: 25px 0px;
+}
+#carouselExampleControls div{
+    display: flex   
+}
+img{
+    width: auto;
+}

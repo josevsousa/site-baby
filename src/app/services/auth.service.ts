@@ -9,19 +9,20 @@ import 'rxjs/add/operator/map'
 @Injectable()
 export class AuthService {
 
-  
-
   constructor(public afAuth: AngularFireAuth) { } 
 
-  logOut(){
-    return this.afAuth.auth.signOut();
-  }
-
+  // logar com o google
   loginGoogle(){
     return this.afAuth.auth.signInWithPopup( new firebase.auth.GoogleAuthProvider() );
 
   }
 
+  // desconectar 
+  logOut(){
+    return this.afAuth.auth.signOut();
+  }
+
+  // retorna user
   getAuth(){
     return this.afAuth.authState.map( auth => auth );
   }  
