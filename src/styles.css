@@ -1,1 +1,23 @@
 /* You can add global styles to this file, and also import other style files */
+.font2{
+    font-family: 'Butterfly Kids', cursive;
+    
+}
+.size1{
+    font-size: 2.5em;
+}
+
+.color2 {
+    background-color: #f3f3f3;
+}
+
+
+.social img {
+    width: 70px;
+}
+
+.container.social {
+    text-align: center;
+    padding: 21px 0;
+    margin-bottom: 10px;
+}

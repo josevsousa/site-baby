@@ -1,48 +1,42 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, TemplateRef } from '@angular/core';
 
+import { BsModalService } from 'ngx-bootstrap/modal';
+import { BsModalRef } from 'ngx-bootstrap/modal/bs-modal-ref.service';
 import { AuthService } from "../../services/auth.service";
 
-import { enableProdMode } from '@angular/core';
-import { Router } from '@angular/router';
-enableProdMode();
+// import { enableProdMode } from '@angular/core';
+// import { Router } from '@angular/router';
+// enableProdMode();
 
 @Component({
   selector: 'app-nav-bar',
   templateUrl: './nav-bar.component.html',
   styleUrls: ['./nav-bar.component.css']
 })
-export class NavBarComponent implements OnInit {
-  public isLogin: boolean;
-  public nomeUser: string;
-  public emailUser: string;
-  public avatarUser: string;
+export class NavBarComponent {
+  
+  modalRef: BsModalRef;
+  message: string;
 
   constructor(
-    private authService: AuthService,
-    private router: Router) { }
+    private modalService: BsModalService,
+    private auth: AuthService
+  ) { }
 
-  ngOnInit() {
-    this.authService.getAuth().subscribe( auth => {
-      if(auth){
-        this.isLogin = true;
-        this.nomeUser = auth.displayName;
-        this.emailUser = auth.email;
-        this.avatarUser = auth.photoURL;  
-      }else{
-        this.isLogin = false;
-      }
-    })
+   // MODAL
+   openModal(template: TemplateRef<any>) {
+    this.modalRef = this.modalService.show(template, {class: 'modal-sm'});
+  }
+ 
+  confirm(): void {
+    this.message = 'Confirmed!';
+    this.modalRef.hide();
+  }
+ 
+  decline(): void {
+    this.message = 'Declined!';
+    this.modalRef.hide();
   }
 
-  login(){
-    this.authService.loginGoogle().then(resp=>{
-      this.router.navigate(['/home']);
-    }).catch(err => console.log(err));
-
-  }
-
-  logOut(){
-    this.authService.logOut();
-  }
-
+ 
 }

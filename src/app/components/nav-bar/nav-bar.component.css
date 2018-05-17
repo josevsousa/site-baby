@@ -4,12 +4,12 @@ button.navbar-toggler{
 }
 a.login {
     display: contents;
-    color: #424242 !important;
+    color: #69a74f !important;
     cursor: pointer;
     
 }
 a.login:hover{
-    color: #727272 !important;
+    color: #509433 !important;
 }
 a.login>.avatar_icon{
     font-size: 35px;
@@ -25,3 +25,34 @@ a#navbarDropdown {
 .nav-item.dropdown {
     display: -webkit-inline-box !important;
 }
+
+.gradColor{
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#097aff+0,6db1ff+100 */
+    /* background-color: #e1f5d9 !important; Old browsers */
+ /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e1f5d9+0,b3f497+100 */
+background: #e1f5d9; /* Old browsers */
+background: -moz-linear-gradient(left, #e1f5d9 0%, #b3f497 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left, #e1f5d9 0%,#b3f497 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right, #e1f5d9 0%,#b3f497 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e1f5d9', endColorstr='#b3f497',GradientType=1 ); /* IE6-9 */
+}
+
+/* nome do Logo */
+.nomeLogo{
+    font-size: larger;
+    display: flex;
+    font-family: 'Quicksand', sans-serif;
+}
+.azul {
+    color: #00a0dc;
+}
+.vermelho {
+    color: red;
+}
+.verde {
+    color: #00b500;
+}
+.amarelo {
+    color: #cabd00;
+}
+

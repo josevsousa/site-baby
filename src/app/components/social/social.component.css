@@ -1,0 +1,14 @@
+.color2 {
+    background-color: #f3f3f3;
+}
+
+
+.social img {
+    width: 70px;
+}
+
+.container.social {
+    text-align: center;
+    padding: 21px 0;
+    margin-bottom: 10px;
+}

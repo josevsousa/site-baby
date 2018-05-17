@@ -1,0 +1,30 @@
+<!-- CONTROLAR EXIBIÇÃO DA VIEW -->
+  <div *ngIf="auth.user | async; then autenticated else guest"></div>
+
+  <ng-template #autenticated>
+    <a (click)="openModal(template)">
+      <div *ngIf="auth.user | async as user">
+        <img [src]="user.photoURL" class="navBarImg">
+      </div>
+    </a>
+  </ng-template>
+
+  <ng-template #guest>
+    <a class="nav-link login" (click)="auth.googleLogin()">
+      <i class="material-icons">lock_outline</i>
+  </a>
+  </ng-template>
+
+  <!-- MODAL -->
+  <ng-template #template>
+    <div class="modal-body text-center">
+        <div *ngIf="auth.user | async as user">
+          <img class="modalImg" [src]="user.photoURL" alt="">
+          <h3>{{user.displayName}}</h3>
+        </div>
+        <h5>Obrigado pela Visita</h5>
+      <p>Deseja sair?</p>
+      <button type="button" class="btn btn-default" (click)="confirm()">Yes</button>
+      <button type="button" class="btn btn-primary" (click)="decline()">No</button>
+    </div>
+  </ng-template> 

@@ -6,14 +6,14 @@
 export const environment = {
   production: false,
   empresa: {
-    nome: "Artesanalbaby"
+    nome: "Nallubaby"
   },
   firebaseConfig: {
-    apiKey: "AIzaSyCCsQi3mQBdGn7o4AfDVvKsa8i9SRrEfAo",
-    authDomain: "sys-control-baby.firebaseapp.com",
-    databaseURL: "https://sys-control-baby.firebaseio.com",
-    projectId: "sys-control-baby",
-    storageBucket: "sys-control-baby.appspot.com",
-    messagingSenderId: "1048986952673"
+    apiKey: "AIzaSyAifvXfb8Mkxcnqa40_LaHkAtjp4iDLRSk",
+    authDomain: "nallubaby-5f6cd.firebaseapp.com",
+    databaseURL: "https://nallubaby-5f6cd.firebaseio.com",
+    projectId: "nallubaby-5f6cd",
+    storageBucket: "nallubaby-5f6cd.appspot.com",
+    messagingSenderId: "166094600384"
   }
 };
