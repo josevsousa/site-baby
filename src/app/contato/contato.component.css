@@ -1,0 +1,32 @@
+ul#UlFormContato {
+    padding: 0;
+}
+
+.ng-invalid.ng-touched:not(form)  {
+    border: 1px solid red;
+    box-shadow: 0 0 0 0.2rem rgba(255,0,0,.25);
+
+}
+
+.alert.alert-danger {
+    padding: 2px 13px;
+    border-radius: 0px 0px 5px 5px
+}
+
+.enviado {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.enviado img {
+    height: 90px;
+}
+
+a img {
+    margin: 9px 8px 2px 0;
+    width: 30px;
+}
+.fontBaby{
+    font-family: 'Indie Flower', cursive !important;
+    color: #979e94;
+}
