@@ -23,6 +23,7 @@ export class NavBarComponent {
     private auth: AuthService
   ) { }
 
+  
    // MODAL
    openModal(template: TemplateRef<any>) {
     this.modalRef = this.modalService.show(template, {class: 'modal-sm'});

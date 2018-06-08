@@ -10,8 +10,6 @@
     <span class="navbar-toggler-icon"></span>
   </button>
 
-
-
   <a class="navbar-brand" routerLink="/">
     <div class="nomeLogo"><div class="azul">N</div><div class="vermelho">all</div><div class="azul">u</div><div class="verde">b</div><div class="amarelo">a</div><div class="verde">b</div><div class="vermelho">y</div></div>
   </a>
@@ -24,6 +22,14 @@
       <li class="nav-item" routerLinkActive="active">
         <a class="nav-link" routerLink="contato">Contato</a>
       </li>
+
+      <!-- admin -->
+      <!-- <ng-template #admin> -->
+        <li class="nav-item" *ngIf="auth.user | async">
+          <a class="nav-link" routerLink="contato">Contato</a>
+        </li>
+      <!-- </ng-template>   -->
+
       <!-- <li class="nav-item" routerLinkActive="active">
         <a class="nav-link" routerLink="projetos">Projetos</a>
       </li>
